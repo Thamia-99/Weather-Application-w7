@@ -9,22 +9,33 @@
   <body>
     <div class="weatherApp">
       <header>
-        <form>
-          <input type="search" placeholder="Give us your city..." required />
-          <input type="submit" value="Search" />
+        <form class="searc-form">
+          <input
+            type="search"
+            placeholder="Give us your city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
 
       <main>
-        <div>
-          <h1>Pretoria</h1>
-          <p>
-            Sunday 11:29 , sunny day
-            <br />
-            Humidity: 10%, Wind: 2 km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Pretoria</h1>
+            <p class="weather-app-details">
+              Sunday 11:29 , sunny day
+              <br />
+              Humidity: <strong> 10% </strong>, Wind: <strong> 2 km/h </strong>
+            </p>
+          </div>
+          <div class="weather-app-temp-container">
+            <div class="weather-app-icon">☀️</div>
+            <div class="weather-app-temp">33</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>☀️ 33°C</div>
       </main>
 
       <footer>

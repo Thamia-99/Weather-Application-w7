@@ -9,12 +9,13 @@
   <body>
     <div class="weatherApp">
       <header>
-        <form class="searc-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Give us your city..."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
@@ -23,7 +24,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Pretoria</h1>
+            <h1 class="weather-app-city" id="city">Pretoria</h1>
             <p class="weather-app-details">
               Sunday 11:29 , sunny day
               <br />
@@ -57,5 +58,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

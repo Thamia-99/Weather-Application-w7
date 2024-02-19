@@ -15,8 +15,8 @@ function refreshWeather(response) {
   speedElement.innerHTML = `${response.data.wind.speed} km/h`;
 
   let date = new Date(response.data.time * 1000);
-  let timeElement = formatDate(date);
-  timeElement.innerHTML = `${date.getHours()}:${date.getMinutes()}`;
+  let timeElement = document.querySelector("#time");
+  timeElement.innerHTML = formatDate(date);
 }
 
 function formatDate(date) {
@@ -33,6 +33,10 @@ function formatDate(date) {
   ];
 
   let day = days[date.getDay()];
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
 
   return `${day} ${hours}:${minutes}`;
 }

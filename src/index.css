@@ -86,3 +86,22 @@ footer {
   padding: 30px 0 0 0;
   font-size: 12px;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16 px;
+  color: purple;
+}
+
+.weather-forecast-temp {
+  font-size: 13px;
+  color: purple;
+}
+
+.temperature-min {
+  opacity: 0.7;
+}

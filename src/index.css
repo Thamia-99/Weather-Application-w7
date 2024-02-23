@@ -105,3 +105,7 @@ footer {
 .temperature-min {
   opacity: 0.7;
 }
+
+.weather-forecast-icon {
+  width: 60%;
+}
